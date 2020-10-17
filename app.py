@@ -1,14 +1,4 @@
-from flask import Flask,render_template
-import requests
+from api.manual_response import app
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    response = requests.get('http://api.open-notify.org/astros.json')
-    return response.status_code
-
-
-if __name__ == '__main':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug = True)
