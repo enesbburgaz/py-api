@@ -1,7 +1,7 @@
 from flask import Flask,jsonify,abort
 import requests
 import json
-from api.utils import  JSON_MIME_TYPE,searchCity
+from api.utils import JSON_MIME_TYPE,searchCity
 from .data import data
 
 app = Flask(__name__)
